@@ -11,13 +11,6 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC8xf61R2jkKHuIX9ZGYTzEiQif62vSco4",
-  authDomain: "funkpop.firebaseapp.com",
-  projectId: "funkpop",
-  storageBucket: "funkpop.firebasestorage.app",
-  messagingSenderId: "1036172967256",
-  appId: "1:1036172967256:web:ba7545b5a96a8d96c3b92d",
-  measurementId: "G-TRXF428XEE",
 };
 
 // Initialize Firebase
