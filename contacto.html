@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-navbar">
+            <div class="contenedor-logo">
+                <img src="img/Logo.png" alt="logo">
+            </div>
+            <div class="contenedor-encabezado">
+                <h1>FunkPop</h1>
+            </div>
+            <!-- Navegación -->
+            <div class="contenedor-menu">
+                <nav class="menu">
+                    <a href="pagina_venta.html">Inicio</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Contactos</a>
+                    <a href="#">Nosotros</a>
+                </nav>
+            </div>
+            <!-- Buscador -->
+            <div class="contenedor-buscador">
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar Funko Favorito...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal: Formulario de Cotización -->
+    <main>
+        <section class="seccion-contacto" id="contacto">
+            <div class="contacto-container">
+                <h2>Cotiza tu Funko o Contáctanos</h2>
+                <p>¿Buscas una figura exclusiva de Dragon Ball, One Piece, Bleach o un Funko Pop específico para tu
+                    colección? Envíanos los detalles y te responderemos con la cotización y disponibilidad.</p>
+
+                <!-- Agregamos id="form-contacto" -->
+                <form class="formulario-contacto" id="form-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+51 900 000 000">
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="tipo-consulta">Tipo de solicitud</label>
+                        <select id="tipo-consulta" name="tipo-consulta">
+                            <option value="cotizacion">Cotización de Funko específico</option>
+                            <option value="pedido">Pedido personalizado / Importación</option>
+                            <option value="stock">Consulta de stock en tienda</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-formulario full-width">
+                        <label for="mensaje">Detalles del Funko o Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"
+                            placeholder="Indícanos el personaje, serie (Ej. Dragon Ball Z, One Piece, Bleach) y edición que deseas cotizar..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Agregamos id="btn-enviar" -->
+                    <button type="submit" class="btn-enviar" id="btn-enviar">Enviar Cotización</button>
+
+                    <!-- Contenedor para mostrar el mensaje de éxito o error -->
+                    <p id="mostrar-mensaje" class="full-width"
+                        style="margin-top: 15px; text-align: center; font-weight: bold;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <p>FunkPop &copy; 2026</p>
+        <p>contacto: ventas@FunkPop.com</p>
+    </footer>
+    <script type="module" src="js/firebase.js"></script>
+</body>
+
+</html>
